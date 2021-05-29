@@ -41,6 +41,7 @@ Route::group(['prefix' => 'FoodKingDom','namespace' => 'Admin'],function (){
 	Route::post('login','LoginController@login')->name('login');
 	Route::group(['prefix' => '/','middleware' => 'auth_admin'],function (){
 		Route::get('/','HomeController@index')->name('dashboard');
+		Route::get('/iframe_url','HomeController@iframeUrlSetting')->name('iframe_url');
 		Route::get('file','HomeController@file')->name('file');
 		Route::resource('Category','CategoryController');
 		Route::resource('customer','CustomerController');

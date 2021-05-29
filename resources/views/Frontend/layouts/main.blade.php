@@ -150,6 +150,12 @@
               <li><span class="icon icon-map-marker"></span><span class="text">Số 127 Thái Hà - Hà Nội <br><small>Đối diện khách sạn Giant Beer</small></span></li>
               <li><a href="#"><span class="icon icon-phone"></span><span class="text">0363311904</span></a></li>
               <li><a href="#"><span class="icon icon-envelope"></span><span class="text"><small>luonluonvaluonluon@gmail.com</small></span></a></li>
+              <?php $iframeUrl = config('url.iframeUrl'); ?>
+              @if($iframeUrl != "")
+              <li>
+                <iframe src="{{$iframeUrl}}" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              </li>
+              @endif
             </ul>
           </div>
         </div>
