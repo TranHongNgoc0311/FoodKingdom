@@ -32,7 +32,7 @@ create table customer(
     gender tinyint DEFAULT 0,
     password varchar(255),
     provider varchar(255),
-    provider_id int,
+    provider_id text,
     phone varchar(20),
     remember_token varchar(255),
     username varchar(255),

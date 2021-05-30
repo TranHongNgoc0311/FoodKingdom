@@ -20,6 +20,8 @@ Route::post('Sign-in','LoginController@login')->name('sign_in');
 Route::get('Sign-out','LoginController@logout')->name('sign_out');
 Route::get('login/{provider}', 'LoginController@redirectToProvider')->name('social_login');
 Route::get('login/{provider}/callback', 'LoginController@handleProviderCallback')->name('social_callback');
+Route::get('Sign-up','CustomerController@create')->name('sign_up');
+Route::post('Sign-up','CustomerController@store')->name('register');
 Route::resource('blog','BlogController');
 Route::resource('Custom_comment','CommentsController');
 Route::get('blog_view','BlogController@view')->name('blog_view');

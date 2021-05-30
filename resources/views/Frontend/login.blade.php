@@ -90,7 +90,7 @@
 				</div>
 
 				<div class="text-center">
-					<a href="{{route('Customer.create')}}" class="txt2 hov1">
+					<a href="{{route('sign_up')}}" class="txt2 hov1">
 						Tôi chưa có tài khoản
 					</a>
 					<br>
