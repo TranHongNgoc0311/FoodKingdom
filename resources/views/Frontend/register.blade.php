@@ -45,7 +45,7 @@
 	<div class="main">
 
     <div class="container ftco-animate">
-      <form method="POST" action="{{route('Customer.store')}}" class="appointment-form" id="appointment-form">
+      <form method="POST" action="{{route('register')}}" class="appointment-form" id="appointment-form">
         <h2>Đăng ký khách hàng</h2>
         @if(Session::has('alert'))
         <div class="help-block" style="margin-bottom: 20px;">

@@ -174,7 +174,7 @@
         <div class="text p-4">
           <h3>{{$menu[$i]->name}}</h3>
           <p>{{substr($menu[$i]->description, 0 ,100)}}</p>
-          <p class="price"><span>{{$menu[$i]->price}}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+          <p class="price"><span>{{$menu[$i]->price}}</span> <a href="{{route('service.index')}}" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
         </div>
       </div>
     </div>
